@@ -1516,9 +1516,70 @@ img {
     .ron-promo-content p {
         margin: 0 auto 24px;
     }
+
+    /* Main Grid Adjustments */
+    .what-is-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .courses-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cert-logos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        padding: 0 40px;
+    }
+
+    .hero .container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .hero-content {
+        order: 2;
+    }
+
+    .hero-image-wrapper {
+        order: 1;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
 }
 
 @media (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .navbar .container {
+        padding: 0 20px;
+    }
+
+    .what-is-cards,
+    .courses-grid,
+    .cert-logos {
+        grid-template-columns: 1fr;
+    }
+
+    .section-header h2 {
+        font-size: 2rem;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
     .cert-grid {
         grid-template-columns: 1fr;
     }
@@ -1530,11 +1591,65 @@ img {
     .why-cert-grid {
         grid-template-columns: 1fr;
     }
+
+    /* Mobile Menu Styles */
+    .navbar-menu {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 80px);
+        background: var(--bg-white);
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 0;
+        transition: 0.3s ease-in-out;
+        box-shadow: var(--shadow-md);
+        z-index: 999;
+    }
+
+    .navbar-menu.active {
+        left: 0;
+    }
+
+    .navbar-mobile-links {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .navbar-cta {
+        margin-top: 32px;
+        width: 90%;
+        text-align: center;
+    }
+
+    .navbar-cta .btn {
+        width: 100%;
+    }
+
+    .hamburger {
+        display: flex;
+    }
 }
 
 @media (max-width: 480px) {
     .industry-grid {
         grid-template-columns: 1fr;
+    }
+
+    .hero-title {
+        font-size: 1.75rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .section-header p {
+        font-size: 1rem;
     }
 }
 

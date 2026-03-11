@@ -69,50 +69,11 @@ document.addEventListener('DOMContentLoaded', () => {
         // Show typing indicator
         showTyping(true);
 
-        try {
-            // Update history
-            conversationHistory.push({ role: "user", content: text });
-
-            // Call Groq API
-            const ronResponse = await getRonResponse();
-
-            // Hide typing indicator
+        // Simulate a delay for a more natural feel
+        setTimeout(() => {
             showTyping(false);
-
-            // Add Ron's response to UI
-            addMessage("ron", ronResponse);
-
-            // Update history
-            conversationHistory.push({ role: "assistant", content: ronResponse });
-
-        } catch (error) {
-            console.error("Ron error:", error);
-            showTyping(false);
-            addMessage("ron", "I apologize, but I'm having a bit of trouble connecting to my knowledge base right now. Could you please try asking again in a moment?");
-        }
-    }
-
-    async function getRonResponse() {
-        const response = await fetch(API_URL, {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify({
-                model: MODEL,
-                messages: conversationHistory,
-                temperature: 0.7,
-                max_tokens: 1024
-            })
-        });
-
-        if (!response.ok) {
-            const errData = await response.json();
-            throw new Error(errData.error || `API error: ${response.status}`);
-        }
-
-        const data = await response.json();
-        return data.message;
+            addMessage("ron", "I'm currently undergoing some upgrades to better serve you. My AI features will be back online soon! In the meantime, feel free to explore EduAsk.");
+        }, 1000);
     }
 
     function addMessage(sender, text) {
