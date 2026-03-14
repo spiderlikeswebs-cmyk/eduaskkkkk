@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Consultancy — EduASK | Find Your Perfect Online Degree</title>
+    <meta name="description"
+        content="EduASK Consultancy helps you navigate the complex world of online degrees. Get expert guidance on university selection, admission support, and scholarships.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo-container">
+                <svg class="logo-svg" viewBox="0 0 48 48" width="44" height="44" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M24 38 C24 38 6 34 6 18 L6 10 C6 10 14 8 24 14 C34 8 42 10 42 10 L42 18 C42 34 24 38 24 38Z"
+                        fill="url(#bookGrad)" stroke="#0d47a1" stroke-width="1.5" stroke-linejoin="round" />
+                    <line x1="24" y1="14" x2="24" y2="38" stroke="#0d47a1" stroke-width="1.5" stroke-linecap="round" />
+                    <path d="M24 6 L19 13 L22 13 L22 22 L26 22 L26 13 L29 13 Z" fill="#ffb300" />
+                    <rect x="18" y="4" width="12" height="3" rx="1.5" fill="#0d47a1" />
+                    <defs>
+                        <linearGradient id="bookGrad" x1="6" y1="10" x2="42" y2="38">
+                            <stop offset="0%" stop-color="#e3f2fd" />
+                            <stop offset="100%" stop-color="#bbdefb" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span class="logo-text">Edu<span class="logo-highlight">ASK</span></span>
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="certifications.html">Certifications</a></li>
+                <li><a href="#" class="active-link">Consultancy</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Toggle navigation menu" id="mobile-menu-btn">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav" id="mobile-nav">
+        <ul>
+            <li><a href="index.html" class="mobile-link">Home</a></li>
+            <li><a href="certifications.html" class="mobile-link">Certifications</a></li>
+            <li><a href="#" class="mobile-link">Consultancy</a></li>
+            <li><a href="about.html" class="mobile-link">About Us</a></li>
+            <li><a href="faq.html" class="mobile-link">FAQ</a></li>
+        </ul>
+    </div>
+
+    <!-- ========== CONSULTANCY HERO ========== -->
+    <section class="consultancy-hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <span class="section-badge">Premium Consultancy</span>
+                <h1>Find Your Perfect<br><span class="text-primary">Online Degree</span>.</h1>
+                <p class="hero-description">Navigate the complex landscape of online higher education with expert guidance. We help you choose, apply, and succeed in UGC-recognized programs from India's top universities.</p>
+                <div class="hero-actions">
+                    <a href="#enquiry" class="btn btn-primary">Book Free Consultation</a>
+                    <a href="#services" class="btn btn-outline">Explore Services</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="decorative-blob"></div>
+                <div class="floating-university-card">
+                    <div class="uni-logo-placeholder">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                            <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                        </svg>
+                    </div>
+                    <strong>UGC Recognized</strong>
+                    <span>Partner Program</span>
+                </div>
+                <!-- Visual asset placeholder or image -->
+                <div class="consultancy-illustration">
+                    <svg viewBox="0 0 500 500" class="hero-svg-illustration">
+                        <circle cx="250" cy="250" r="200" fill="var(--primary-50)" opacity="0.3" />
+                        <!-- Add a more detailed SVG illustration here if needed -->
+                        <rect x="150" y="150" width="200" height="250" rx="20" fill="white" stroke="var(--border)" stroke-width="2" />
+                        <line x1="180" y1="200" x2="320" y2="200" stroke="var(--primary)" stroke-width="4" stroke-linecap="round" />
+                        <line x1="180" y1="240" x2="320" y2="240" stroke="var(--border)" stroke-width="2" stroke-linecap="round" />
+                        <line x1="180" y1="270" x2="280" y2="270" stroke="var(--border)" stroke-width="2" stroke-linecap="round" />
+                        <rect x="280" y="320" width="100" height="120" rx="10" fill="var(--accent)" opacity="0.8" />
+                        <path d="M100 400 L400 400" stroke="var(--primary)" stroke-width="8" stroke-linecap="round" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== WHY CHOOSE US ========== -->
+    <section class="why-consultancy section-padding">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title">Why EduASK Consultancy?</h2>
+                <p class="section-description">We bridge the gap between your aspirations and the right academic platform.</p>
+            </div>
+            <div class="consultancy-features mt-5">
+                <div class="c-feature-card">
+                    <div class="c-icon icon-blue">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <h3>Expert Counselors</h3>
+                    <p>Get personalized advice from professionals who understand the evolving landscape of online education.</p>
+                </div>
+                <div class="c-feature-card">
+                    <div class="c-icon icon-amber">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>
+                        </svg>
+                    </div>
+                    <h3>100+ Top Universities</h3>
+                    <p>We are partnered with almost every online university in India, offering you the widest range of UGC-entitled programs.</p>
+                </div>
+                <div class="c-feature-card">
+                    <div class="c-icon icon-green">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/>
+                        </svg>
+                    </div>
+                    <h3>Fee Assistance</h3>
+                    <p>Transparent fee structures with easy EMI options and guidance on available scholarships.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SERVICES SECTION ========== -->
+    <section class="consultancy-services bg-light section-padding" id="services">
+        <div class="container">
+            <div class="services-grid">
+                <div class="service-image">
+                    <!-- Placeholder SVG for Service Image -->
+                    <svg viewBox="0 0 400 400" class="service-svg">
+                        <rect x="50" y="50" width="300" height="300" rx="30" fill="white" shadow="var(--shadow-lg)" />
+                        <circle cx="120" cy="120" r="40" fill="var(--primary-50)" />
+                        <path d="M200 150 L300 150" stroke="var(--border)" stroke-width="4" stroke-linecap="round" />
+                        <path d="M200 180 L280 180" stroke="var(--border)" stroke-width="4" stroke-linecap="round" />
+                        <rect x="100" y="220" width="200" height="80" rx="10" fill="var(--primary)" opacity="0.1" />
+                    </svg>
+                </div>
+                <div class="service-content">
+                    <h2 class="section-title">End-to-End Support</h2>
+                    <p>We don't just recommend; we walk with you through every step of your enrollment journey.</p>
+                    <div class="service-list">
+                        <div class="service-item">
+                            <div class="s-dot"></div>
+                            <div>
+                                <h4>University Shortlisting</h4>
+                                <p>We analyze your background and goals to suggest the best-fit online degree programs.</p>
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <div class="s-dot"></div>
+                            <div>
+                                <h4>Admission Guidance</h4>
+                                <p>From documentation to application submission, we handle the friction of enrollment.</p>
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <div class="s-dot"></div>
+                            <div>
+                                <h4>Career Counseling</h4>
+                                <p>Understand how your chosen degree aligns with your long-term career trajectory.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PARTNER UNIVERSITIES ========== -->
+    <section class="partners-section section-padding">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title">Our Partner Universities</h2>
+                <p class="section-description">We collaborate with the most respected names in online education.</p>
+            </div>
+            <div class="partners-carousel">
+                <div class="partners-track">
+                    <div class="partner-logo"><span>College Vidya</span></div>
+                    <div class="partner-logo"><span>Jain University</span></div>
+                    <div class="partner-logo"><span>Lovely Professional University</span></div>
+                    <div class="partner-logo"><span>Amity University</span></div>
+                    <div class="partner-logo"><span>Manipal University</span></div>
+                    <div class="partner-logo"><span>Chandigarh University</span></div>
+                    <div class="partner-logo"><span>Arka Jain University</span></div>
+                    <div class="partner-logo"><span>IGNOU</span></div>
+                    <div class="partner-logo"><span>Sikkim Manipal University</span></div>
+                    <div class="partner-logo"><span>Symbiosis SCDL</span></div>
+                    <div class="partner-logo"><span>NMIMS Global</span></div>
+                    <div class="partner-logo"><span>Annamalai University</span></div>
+                    <div class="partner-logo"><span>University of Madras</span></div>
+                    <div class="partner-logo"><span>KSOU</span></div>
+                    <div class="partner-logo"><span>NSOU</span></div>
+                    <div class="partner-logo"><span>YCMOU</span></div>
+                    <div class="partner-logo"><span>BRAOU</span></div>
+                    <div class="partner-logo"><span>Kurukshetra University</span></div>
+                    <div class="partner-logo"><span>MDU Rohtak</span></div>
+                    <div class="partner-logo"><span>University of Mumbai</span></div>
+                    <div class="partner-logo"><span>DU SOL</span></div>
+                    <div class="partner-logo"><span>Osmania University</span></div>
+                    <div class="partner-logo"><span>Pondicherry University</span></div>
+                    <div class="partner-logo"><span>SRM Online</span></div>
+                    <div class="partner-logo"><span>VIT Online</span></div>
+                    <div class="partner-logo"><span>Shiv Nadar University</span></div>
+                    <div class="partner-logo"><span>BITS Pilani WILP</span></div>
+                    <div class="partner-logo"><span>UPES Online</span></div>
+                    <div class="partner-logo"><span>Kurukshetra University</span></div>
+                    <div class="partner-logo"><span>MDU Rohtak</span></div>
+                    <div class="partner-logo"><span>Manav Rachna</span></div>
+                    <div class="partner-logo"><span>IFHE Hyderabad</span></div>
+                    <div class="partner-logo"><span>ICFAI Foundation</span></div>
+                    <div class="partner-logo"><span>GITAM University</span></div>
+                    <div class="partner-logo"><span>Vignan University</span></div>
+                    <div class="partner-logo"><span>KL University</span></div>
+                    <div class="partner-logo"><span>Reva University</span></div>
+                    <div class="partner-logo"><span>PES University</span></div>
+                    <div class="partner-logo"><span>M.S. Ramaiah</span></div>
+                    <div class="partner-logo"><span>Dayananda Sagar</span></div>
+                    <div class="partner-logo"><span>Chanakya University</span></div>
+                    <div class="partner-logo"><span>RV University</span></div>
+                    <div class="partner-logo"><span>Presidency University</span></div>
+                    <div class="partner-logo"><span>Atria University</span></div>
+                    <div class="partner-logo"><span>CMR University</span></div>
+                    <div class="partner-logo"><span>Garden City</span></div>
+                    <div class="partner-logo"><span>Bangalore University</span></div>
+                    <div class="partner-logo"><span>Mysore University</span></div>
+                    <div class="partner-logo"><span>+50 more</span></div>
+                    <!-- Duplicate for seamless scroll -->
+                    <div class="partner-logo"><span>College Vidya</span></div>
+                    <div class="partner-logo"><span>Jain University</span></div>
+                    <div class="partner-logo"><span>Lovely Professional University</span></div>
+                    <div class="partner-logo"><span>Amity University</span></div>
+                    <div class="partner-logo"><span>Manipal University</span></div>
+                    <div class="partner-logo"><span>Chandigarh University</span></div>
+                    <div class="partner-logo"><span>Arka Jain University</span></div>
+                    <div class="partner-logo"><span>IGNOU</span></div>
+                    <div class="partner-logo"><span>Sikkim Manipal University</span></div>
+                    <div class="partner-logo"><span>Symbiosis SCDL</span></div>
+                    <div class="partner-logo"><span>NMIMS Global</span></div>
+                    <div class="partner-logo"><span>Annamalai University</span></div>
+                    <div class="partner-logo"><span>University of Madras</span></div>
+                    <div class="partner-logo"><span>KSOU</span></div>
+                    <div class="partner-logo"><span>NSOU</span></div>
+                    <div class="partner-logo"><span>YCMOU</span></div>
+                    <div class="partner-logo"><span>BRAOU</span></div>
+                    <div class="partner-logo"><span>Kurukshetra University</span></div>
+                    <div class="partner-logo"><span>MDU Rohtak</span></div>
+                    <div class="partner-logo"><span>University of Mumbai</span></div>
+                    <div class="partner-logo"><span>DU SOL</span></div>
+                    <div class="partner-logo"><span>Osmania University</span></div>
+                    <div class="partner-logo"><span>Pondicherry University</span></div>
+                    <div class="partner-logo"><span>SRM Online</span></div>
+                    <div class="partner-logo"><span>VIT Online</span></div>
+                    <div class="partner-logo"><span>Shiv Nadar University</span></div>
+                    <div class="partner-logo"><span>BITS Pilani WILP</span></div>
+                    <div class="partner-logo"><span>UPES Online</span></div>
+                    <div class="partner-logo"><span>Kurukshetra University</span></div>
+                    <div class="partner-logo"><span>MDU Rohtak</span></div>
+                    <div class="partner-logo"><span>Manav Rachna</span></div>
+                    <div class="partner-logo"><span>IFHE Hyderabad</span></div>
+                    <div class="partner-logo"><span>ICFAI Foundation</span></div>
+                    <div class="partner-logo"><span>GITAM University</span></div>
+                    <div class="partner-logo"><span>Vignan University</span></div>
+                    <div class="partner-logo"><span>KL University</span></div>
+                    <div class="partner-logo"><span>Reva University</span></div>
+                    <div class="partner-logo"><span>PES University</span></div>
+                    <div class="partner-logo"><span>M.S. Ramaiah</span></div>
+                    <div class="partner-logo"><span>Dayananda Sagar</span></div>
+                    <div class="partner-logo"><span>Chanakya University</span></div>
+                    <div class="partner-logo"><span>RV University</span></div>
+                    <div class="partner-logo"><span>Presidency University</span></div>
+                    <div class="partner-logo"><span>Atria University</span></div>
+                    <div class="partner-logo"><span>CMR University</span></div>
+                    <div class="partner-logo"><span>Garden City</span></div>
+                    <div class="partner-logo"><span>Bangalore University</span></div>
+                    <div class="partner-logo"><span>Mysore University</span></div>
+                    <div class="partner-logo"><span>+50 more</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ENQUIRY FORM ========== -->
+    <section class="enquiry-section section-padding" id="enquiry">
+        <div class="container">
+            <div class="enquiry-card">
+                <div class="enquiry-grid">
+                    <div class="enquiry-info">
+                        <h2>Ready to Start Your Journey?</h2>
+                        <p>Fill out the form below and one of our expert education counselors will get in touch with you within 24 hours.</p>
+                        <ul class="benefit-list">
+                            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Free Consultation</li>
+                            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> No Hidden Charges</li>
+                            <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg> Trusted by 5000+ Students</li>
+                        </ul>
+                    </div>
+                    <div class="enquiry-form-wrapper">
+                        <form id="consultancyForm" class="consultancy-form" action="https://formsubmit.co/jc.rakeshverma@gmail.com" method="POST">
+                            <!-- FormSubmit Configuration -->
+                            <input type="hidden" name="_subject" value="New Consultancy Enquiry - EduASK">
+                            <input type="hidden" name="_template" value="table">
+                            <input type="hidden" name="_captcha" value="false">
+                            <!-- End Configuration -->
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="degree">Interested Degree</label>
+                                <select id="degree" name="degree" required>
+                                    <option value="" disabled selected>Select an option</option>
+                                    <option value="bba">Online BBA</option>
+                                    <option value="mba">Online MBA</option>
+                                    <option value="bca">Online BCA</option>
+                                    <option value="mca">Online MCA</option>
+                                    <option value="data-science">M.Sc in Data Science</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-full">Submit Enquiry</button>
+                        </form>
+                        <div id="formSuccess" class="form-success hidden">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>
+                            </svg>
+                            <h3>Thank You!</h3>
+                            <p>Your enquiry has been received. Our counselor will call you shortly.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <svg class="logo-svg" viewBox="0 0 48 48" width="36" height="36" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M24 38 C24 38 6 34 6 18 L6 10 C6 10 14 8 24 14 C34 8 42 10 42 10 L42 18 C42 34 24 38 24 38Z"
+                            fill="#1e3a5f" stroke="#fff" stroke-width="1.5" stroke-linejoin="round" />
+                        <line x1="24" y1="14" x2="24" y2="38" stroke="#fff" stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M24 6 L19 13 L22 13 L22 22 L26 22 L26 13 L29 13 Z" fill="#ffb300" />
+                        <rect x="18" y="4" width="12" height="3" rx="1.5" fill="#fff" />
+                    </svg>
+                    <span>Edu<span class="logo-highlight-footer">ASK</span></span>
+                </div>
+                <p>Empowering students to build critical skills, earn valuable certifications, and navigate their path
+                    to a successful future. Your career starts here.</p>
+            </div>
+            <div class="footer-links-group">
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="certifications.html">Certifications</a></li>
+                        <li><a href="#">Consultancy</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="index.html#courses">Learning Paths</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 EduASK. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

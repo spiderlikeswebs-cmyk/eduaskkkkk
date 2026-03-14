@@ -223,4 +223,78 @@ document.addEventListener('DOMContentLoaded', () => {
         };
         window.addEventListener('scroll', highlightNav, { passive: true });
     }
+
+    /* Hero animation simplified - using premium 3D static visual */
+
+    /* --- Consultancy Form Submission (FormSubmit AJAX) --- */
+    const consultancyForm = document.getElementById('consultancyForm');
+    const formSuccess = document.getElementById('formSuccess');
+
+    if (consultancyForm && formSuccess) {
+        consultancyForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Premium button state change
+            const submitBtn = consultancyForm.querySelector('button[type="submit"]');
+            const originalBtnText = submitBtn.textContent;
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Sending...';
+
+            const formData = new FormData(this);
+
+            fetch(this.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            .then(response => {
+                if (response.ok) {
+                    consultancyForm.classList.add('hidden');
+                    formSuccess.classList.remove('hidden');
+                    formSuccess.style.opacity = '0';
+                    formSuccess.style.transform = 'translateY(20px)';
+                    formSuccess.style.transition = 'all 0.6s cubic-bezier(0.23, 1, 0.32, 1)';
+                    
+                    // Trigger entrance animation
+                    setTimeout(() => {
+                        formSuccess.style.opacity = '1';
+                        formSuccess.style.transform = 'translateY(0)';
+                    }, 50);
+                } else {
+                    throw new Error('Form submission failed');
+                }
+            })
+            .catch(error => {
+                console.error('Submission Error:', error);
+                submitBtn.disabled = false;
+                submitBtn.textContent = originalBtnText;
+                alert('Oops! There was a problem sending your message. Please try again or contact us directly.');
+            });
+        });
+    }
+    /* --- FAQ Accordion Interactivity --- */
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        question.addEventListener('click', () => {
+            const isActive = item.classList.contains('active');
+            
+            // Close all other items
+            faqItems.forEach(otherItem => {
+                otherItem.classList.remove('active');
+                const otherAnswer = otherItem.querySelector('.faq-answer');
+                if (otherAnswer) otherAnswer.style.maxHeight = null;
+            });
+
+            // Toggle current item
+            if (!isActive) {
+                item.classList.add('active');
+                const answer = item.querySelector('.faq-answer');
+                if (answer) answer.style.maxHeight = answer.scrollHeight + "px";
+            }
+        });
+    });
 });
+
